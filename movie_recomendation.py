@@ -335,8 +335,7 @@ if user_list:
             if st.sidebar.button(f"Remove {m['id']}", key=f"rm_{m['id']}"):
                 remove_from_watchlist(username, m["id"])
                 st.experimental_rerun()
-else:
-    st.sidebar.write("Watchlist empty. Add movies from the main view.")
 
 st.markdown("---")
 st.caption("This app uses TMDB live data. For best results add your TMDB_API_KEY in the code.")
+
